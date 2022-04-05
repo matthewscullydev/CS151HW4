@@ -1,4 +1,17 @@
-
+/**
+ * 
+ * @author Matthew Scully
+ * @version 1.0
+ * @since 3-9-22
+ * 
+ * Person class
+ * <p>
+ * 
+ * This is the person class which has a first and last name as well as an age. It uses a comparator to compare ages. 
+ * 
+ * </p>
+ * 
+ */
 public class Person implements Comparable<Person> {
 
 	String firstname;

@@ -1,13 +1,23 @@
+/**
+ * 
+ * @author Matthew Scully
+ * @version 1.0
+ * @since 3-9-22
+ * 
+ * Course class
+ * <p>
+ * 
+ * This is the ListManipulator class which includes methods to swap largest and smallest, assign to sorted table, and to sort integer arraylists.
+ * 
+ * </p>
+ * 
+ */
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.NavigableMap;
-import java.util.TreeMap;
+
 
 
 
@@ -17,6 +27,13 @@ public class ListManipulator {
 		// TODO Auto-generated constructor stub
 	}
 	
+	
+/** 
+ * this sort method will sort the list in ascending or descending order according to the boolean param
+ * @param myLst is an arraylist
+ * @param ascending is a boolean value which determines which way the list is sorted
+ * @return sorted list is returned
+ */
 	public static ArrayList<Integer> sort(ArrayList<Integer> myLst, Boolean ascending){
 
 		if (ascending)
@@ -48,7 +65,11 @@ public class ListManipulator {
 		return myLst;
 	}
 	
-	
+	/**
+	 * This method swaps the largest and smallest values of the arraylist
+	 * @param myLst integer arraylist input
+	 * @return swapped list is returned
+	 */
 	public static ArrayList<Integer> swapLargestSmallest(ArrayList<Integer> myLst){
 		
 		int i = 0;
@@ -94,6 +115,10 @@ public class ListManipulator {
 		
 	}
 	
+	/**
+	 * table method returns sorted hashmap based on frequency
+	 * @param myLst input of arraylist
+	 */
 	
 	public static void table(ArrayList<Integer> myLst) {
 		

@@ -1,3 +1,18 @@
+/**
+ * 
+ * @author Matthew Scully
+ * @version 1.0
+ * @since 3-9-22
+ * 
+ * PersonTest class
+ * <p>
+ * 
+ * This is the PersonTest class which sorts the arraylist ascending and descending based on certain attributes.
+ * 
+ * </p>
+ * 
+ */
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -12,30 +27,7 @@ public class PersonTest extends ListManipulator{
 	public static void main(String[] args) {
 		
 		ArrayList<Person> personlist = new ArrayList<Person>();
-		
-	//test begins here	
-		ArrayList<Integer> personlist2 = new ArrayList<Integer>();
-		
-		personlist2.add(2);
-		personlist2.add(438);
-		personlist2.add(438);
-		personlist2.add(23);
-		personlist2.add(23);
-		personlist2.add(23);
-		personlist2.add(81234);
-		
-		//sort(personlist2,false);
-		//swapLargestSmallest(personlist2);
-		
-		table(personlist2);
-		
-		Iterator testIterate7 = personlist2.iterator();
-		while(testIterate7.hasNext()) {
-			System.out.println(testIterate7.next());
-		}	
-		
-		System.out.println();
-	//test ends here
+
 		
 		Person a = new Person("Joe", "Smith", 40);
 		Person b = new Person("Amy", "Gold", 32);
@@ -51,7 +43,10 @@ public class PersonTest extends ListManipulator{
 		personlist.add(e);
 		personlist.add(f);
 		
-		//ascending age
+		//descending age
+		
+		System.out.println("descending age");
+		System.out.println();
 		
 		Collections.sort(personlist);
 	
@@ -64,7 +59,9 @@ public class PersonTest extends ListManipulator{
 			
 		Collections.sort(personlist, Collections.reverseOrder());
 		
-		//descending age
+		//ascending age
+		System.out.println("ascending age");
+		System.out.println();
 		
 		Iterator testIterate2 = personlist.iterator();
 		while(testIterate2.hasNext()) {
@@ -73,7 +70,10 @@ public class PersonTest extends ListManipulator{
 		
 		System.out.println();
 		
-		//alphabetical ascending
+		//alphabetical descending
+		System.out.println("descending firstname alphabetical");
+		System.out.println();
+		
 		Collections.sort(personlist,
 				new Comparator<Person>()
 				{
@@ -90,7 +90,10 @@ public class PersonTest extends ListManipulator{
 		
 		System.out.println();
 		
-		//alphabetical descending
+		//alphabetical ascending
+		System.out.println("ascending firstname alphabetical");
+		System.out.println();
+		
 		Collections.sort(personlist,
 					 Collections.reverseOrder(new Comparator<Person>()
 						{
@@ -108,6 +111,8 @@ public class PersonTest extends ListManipulator{
 		System.out.println();
 		
 		//last name length ascending
+		System.out.println("ascending lastname length");
+		System.out.println();
 		
 		Collections.sort(personlist,
 				new Comparator<Person>()
@@ -126,6 +131,8 @@ public class PersonTest extends ListManipulator{
 		System.out.println();
 		
 		//last name length descending
+		System.out.println("descending lastname length");
+		System.out.println();
 		
 		Collections.sort(personlist,
 				 Collections.reverseOrder(new Comparator<Person>()

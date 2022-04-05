@@ -1,3 +1,19 @@
+/**
+ * 
+ * @author Matthew Scully
+ * @version 1.0
+ * @since 3-9-22
+ * 
+ * Student class
+ * <p>
+ * 
+ * This is the Student class which has attributes of a student as well as the capability to sort and add courses.
+ * 
+ * </p>
+ * 
+ */
+
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -101,19 +117,33 @@ public class Student {
 		// TODO Auto-generated constructor stub
 	}
 
+	/**
+	 * this method adds a course for the student
+	 * @param c which is the course
+	 */
 	public void addCourse(Course c) {
 		
 		if(!courses.contains(c)) {
 		courses.add(c);
 		}
 	}
-	
+
+	/**
+	 * this method removes a course for the student
+	 * @param c which is the course
+	 */
 	public void removeCourse(Course c) {
 		if(courses.contains(c)) {
 		courses.remove(c);
 		}
 	}
 	
+	
+	/**
+	 * sort courses method which sorts the courses the student has based on attributes
+	 * @param attribute the type of attribute to sort with
+	 * @param descending the way it is sorted
+	 */
 	public void sort(String attribute, Boolean descending)
 	{
 		

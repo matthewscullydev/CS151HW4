@@ -1,4 +1,18 @@
-
+/**
+ * 
+ * @author Matthew Scully
+ * @version 1.0
+ * @since 3-9-22
+ * 
+ * Course class
+ * <p>
+ * 
+ * This is the course class which has the attributes of name description department time and weekday. Students will have courses.
+ * They may add courses, remove them, and sort them using their attributes.
+ * 
+ * </p>
+ * 
+ */
 public class Course {
 
 	private String name;
@@ -77,6 +91,7 @@ public class Course {
 		this.weekday = weekday;
 	}
 
+	
 	@Override
     public String toString() {
     // print the course object as defined below 
